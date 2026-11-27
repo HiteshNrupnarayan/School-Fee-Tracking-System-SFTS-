@@ -1,0 +1,25 @@
+{
+  "manifest_version": "0.3",
+  "name": "school-fee-tracking-system",
+  "display_name": "School Fee Tracking System",
+  "version": "0.1.0",
+  "description": "Pandas-based MCP server for school fee tracking and reporting.",
+  "author": {
+    "name": "Hitesh Nrupnarayan"
+  },
+  "server": {
+    "type": "python",
+    "entry_point": "server.py",
+    "mcp_config": {
+      "command": "uv",
+      "args": [
+        "run",
+        "--directory",
+        "${__dirname}",
+        "python",
+        "server.py"
+      ],
+      "env": {}
+    }
+  }
+}
